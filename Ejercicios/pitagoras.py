@@ -10,10 +10,24 @@
 
 import math
 
-a = int(input("Ingese el valor de A: "))
-b = input("Ingese el valor de B: ")
-b = int(b)
+modo = input("¿Conoces el valor de la hipotenusa? ")
 
-c = math.sqrt((a * a) + (b * b))
+if modo != "si":
+    a = int(input("Ingese el valor de A: "))
+    b = input("Ingese el valor de B: ")
+    b = int(b)
 
-print(c)
+    c = math.sqrt((a * a) + (b * b))
+
+    print("El valor de la hipotenusa es:", c)
+else:
+    c = int(input("Ingese el valor de la hipotenusa: "))
+    b = input("Ingese el valor de B: ")
+    b = int(b)
+
+    if b >= c:
+        print("Imposible de calcular ya que el cateto es mayor a la hipotenusa.")
+    else:
+        a = math.sqrt((c * c) - (b * b))
+
+        print("El valor del cateto A es:", a)
