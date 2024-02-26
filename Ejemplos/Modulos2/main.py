@@ -26,4 +26,4 @@ print("El perimetro es:", perimetro)
 print("El área es:", area)
 
 ventana.exitonclick()
-vamoacalmarno.end()
+vamoacalmarno.Termintor()
