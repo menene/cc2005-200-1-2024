@@ -17,7 +17,7 @@ vamoacalmarno.speed(8)
 # dibujo.poligono("pentagono", vamoacalmarno, 150)
 # dibujo.poligono("dodecagono", vamoacalmarno, 75)
 
-opcion = "cualquier cosa"
+opcion = "lo que sea"
 while opcion != "salir":
     opcion = input("Ingrese la figura que quiere dibujar: ")
 
@@ -34,6 +34,6 @@ while opcion != "salir":
     elif opcion == 'salir':
         print("Feliz día 👋🏽")
         
-        vamoacalmarno.done()
+        turtle.Terminator()
     else:
         print("figura no reconcida... intentalo nuevamente")
